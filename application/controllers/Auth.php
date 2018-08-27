@@ -93,10 +93,12 @@ class Auth extends CI_Controller
 				'id' => 'identity',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('identity'),
+				'class' => "form-control",
 			);
 			$this->data['password'] = array('name' => 'password',
 				'id' => 'password',
 				'type' => 'password',
+				'class' => "form-control",
 			);
 
 			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
@@ -210,6 +212,7 @@ class Auth extends CI_Controller
 			// setup the input
 			$this->data['identity'] = array('name' => 'identity',
 				'id' => 'identity',
+				'class' => "form-control",
 			);
 
 			if ($this->config->item('identity', 'ion_auth') != 'email')
@@ -502,48 +505,56 @@ class Auth extends CI_Controller
 				'id' => 'first_name',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('first_name'),
+				'class' => "form-control",
 			);
 			$this->data['last_name'] = array(
 				'name' => 'last_name',
 				'id' => 'last_name',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('last_name'),
+				'class' => "form-control",
 			);
 			$this->data['identity'] = array(
 				'name' => 'identity',
 				'id' => 'identity',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('identity'),
+				'class' => "form-control",
 			);
 			$this->data['email'] = array(
 				'name' => 'email',
 				'id' => 'email',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('email'),
+				'class' => "form-control",
 			);
 			$this->data['company'] = array(
 				'name' => 'company',
 				'id' => 'company',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('company'),
+				'class' => "form-control",
 			);
 			$this->data['phone'] = array(
 				'name' => 'phone',
 				'id' => 'phone',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('phone'),
+				'class' => "form-control",
 			);
 			$this->data['password'] = array(
 				'name' => 'password',
 				'id' => 'password',
 				'type' => 'password',
 				'value' => $this->form_validation->set_value('password'),
+				'class' => "form-control",
 			);
 			$this->data['password_confirm'] = array(
 				'name' => 'password_confirm',
 				'id' => 'password_confirm',
 				'type' => 'password',
 				'value' => $this->form_validation->set_value('password_confirm'),
+				'class' => "form-control",
 			);
 
 			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'create_user', $this->data);
@@ -667,34 +678,40 @@ class Auth extends CI_Controller
 			'id'    => 'first_name',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('first_name', $user->first_name),
+			'class' => "form-control",
 		);
 		$this->data['last_name'] = array(
 			'name'  => 'last_name',
 			'id'    => 'last_name',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('last_name', $user->last_name),
+			'class' => "form-control",
 		);
 		$this->data['company'] = array(
 			'name'  => 'company',
 			'id'    => 'company',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('company', $user->company),
+			'class' => "form-control",
 		);
 		$this->data['phone'] = array(
 			'name'  => 'phone',
 			'id'    => 'phone',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('phone', $user->phone),
+			'class' => "form-control",
 		);
 		$this->data['password'] = array(
 			'name' => 'password',
 			'id'   => 'password',
-			'type' => 'password'
+			'type' => 'password',
+			'class' => "form-control",
 		);
 		$this->data['password_confirm'] = array(
 			'name' => 'password_confirm',
 			'id'   => 'password_confirm',
-			'type' => 'password'
+			'type' => 'password',
+			'class' => "form-control",
 		);
 
 		$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'edit_user', $this->data);
@@ -737,12 +754,14 @@ class Auth extends CI_Controller
 				'id'    => 'group_name',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('group_name'),
+				'class' => "form-control",
 			);
 			$this->data['description'] = array(
 				'name'  => 'description',
 				'id'    => 'description',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('description'),
+				'class' => "form-control",
 			);
 
 			$this->_render_page('auth' . DIRECTORY_SEPARATOR . 'create_group', $this->data);

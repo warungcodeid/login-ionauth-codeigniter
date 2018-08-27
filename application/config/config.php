@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/loginionauth/';
+$config['base_url'] = 'http://localhost/login/';
 
 /*
 |--------------------------------------------------------------------------
@@ -76,7 +76,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'indonesian';
 
 /*
 |--------------------------------------------------------------------------
@@ -200,6 +200,7 @@ $config['directory_trigger'] = 'd';
 |
 */
 $config['allow_get_array'] = TRUE;
+
 
 /*
 |--------------------------------------------------------------------------
